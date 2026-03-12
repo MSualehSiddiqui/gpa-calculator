@@ -1,0 +1,110 @@
+/* Navbar wrapper */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    z-index: 1000;
+    transition: padding 0.3s ease;
+}
+
+/* Logo */
+.logo {
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: #ff1a1a;
+}
+
+/* Contact Button */
+.contact-btn {
+    padding: 10px 26px;
+    border-radius: 30px;
+    background: transparent;
+    border: 1.5px solid rgba(255, 255, 255, 0.6);
+    color: white;
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-btn:hover {
+    background: rgba(255, 255, 255, 0.12);
+    border-color: white;
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.25);
+    transform: translateY(-2px);
+}
+
+/* Optional hover shine effect */
+.contact-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transform: skewX(-20deg);
+    transition: all 0.7s;
+}
+
+.contact-btn:hover::before {
+    left: 100%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .navbar {
+        padding: 16px 6%;
+    }
+
+    .logo {
+        font-size: 26px;
+    }
+
+    .contact-btn {
+        padding: 8px 20px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 14px 5%;
+    }
+
+    .contact-btn {
+        margin-top: 8px;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 10px 4%;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .contact-btn {
+        padding: 6px 16px;
+        font-size: 12px;
+    }
+}

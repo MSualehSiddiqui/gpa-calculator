@@ -1,0 +1,128 @@
+.grading-premium-section {
+    padding: 140px 8% 100px 8%;
+    background: #1a1a1a;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Divider at the top */
+.grading-divider {
+    width: 80px;
+    height: 3px;
+    margin: 0 auto 40px auto;
+    background: linear-gradient(90deg, #ff4d4d, #a80000, #ff4d4d);
+    border-radius: 2px;
+}
+
+/* Glow behind cards */
+.grading-premium-section::before {
+    content: '';
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(255, 77, 77, 0.2), transparent 70%);
+    filter: blur(120px);
+    animation: subtleGlow 6s infinite alternate;
+    z-index: 0;
+}
+
+@keyframes subtleGlow {
+    from {
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    to {
+        transform: translate(-50%, -50%) scale(1.05);
+    }
+}
+
+/* Cards container */
+.grading-premium-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 25px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Individual grade card */
+.grade-card {
+    background: linear-gradient(145deg, #1a1a1a, #2a0a0a);
+    color: #fff;
+    border-radius: 22px;
+    padding: 25px 15px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: default;
+    border: 1px solid #ff4d4d;
+}
+
+/* Hover effect */
+.grade-card:hover {
+    transform: translateY(-6px) scale(1.06);
+    box-shadow: 0 15px 35px rgba(255, 77, 77, 0.45);
+}
+
+.grade-marks {
+    font-size: 15px;
+    font-weight: 500;
+    color: #ff9999;
+    margin-bottom: 6px;
+}
+
+.grade-letter {
+    font-size: 20px;
+    font-weight: 700;
+    color: #ff4d4d;
+    margin-bottom: 6px;
+}
+
+.grade-gpa {
+    font-size: 17px;
+    font-weight: 600;
+    color: #fff;
+}
+
+/* Optional Tip box below cards */
+.grade-tip {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 14px;
+    color: #ccc;
+    padding: 14px 22px;
+    border-radius: 16px;
+    background: linear-gradient(145deg, #2a0a0a, #1a1a1a);
+    border: 1px solid #ff4d4d;
+    transition: all 0.3s ease;
+}
+
+.grade-tip:hover {
+    box-shadow: 0 10px 25px rgba(255, 77, 77, 0.35);
+    transform: translateY(-3px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .grading-premium-section {
+        padding: 120px 5% 80px 5%;
+    }
+
+    .grading-premium-cards {
+        gap: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .grading-premium-section {
+        padding: 100px 4% 60px 4%;
+    }
+
+    .grade-card {
+        padding: 20px 12px;
+    }
+}

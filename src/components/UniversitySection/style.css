@@ -1,0 +1,411 @@
+.university-section {
+    padding: 100px 8%;
+    background: #1a1a1a;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.section-header h2 {
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 10px;
+    background: linear-gradient(90deg, #ff1a1a, #ff4d4d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.section-header p {
+    font-size: 18px;
+    color: #d6d6d6;
+    margin-bottom: 50px;
+}
+
+/* Card styling */
+.gpa-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px);
+    border-radius: 25px;
+    padding: 40px 50px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.gpa-card:hover {
+    transform: translateY(-5px);
+}
+
+.gpa-card h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #ff4d4d;
+}
+
+.input-group input {
+    padding: 12px 15px;
+    border-radius: 15px !important;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.input-group input:focus {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.35);
+}
+
+/* Card Button */
+.start-btn {
+    width: 100%;
+    padding: 14px;
+    border-radius: 35px;
+    border: 2px solid #ff1a1a;
+    background: transparent;
+    color: #ff1a1a;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.35s ease;
+}
+
+.start-btn:hover {
+    background: #ff1a1a;
+    color: white;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
+    transform: translateY(-3px);
+}
+
+/* Table wrapper - darkish card in theme */
+.course-table-wrapper {
+    background: #1f1f1f;
+    /* dark card for theme */
+    color: #fff;
+    /* text color for readability */
+    padding: 40px 30px;
+    border-radius: 25px;
+    width: 100%;
+    margin: 50px auto 80px auto;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    /* soft premium shadow */
+    transition: transform 0.3s ease;
+}
+
+.course-table-wrapper:hover {
+    transform: translateY(-5px);
+}
+
+.course-table-wrapper h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #ff4d4d;
+    /* accent color from theme */
+    text-align: center;
+}
+
+/* Table styling */
+.course-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 12px;
+    border-spacing: 10px;
+    /* space between rows */
+}
+
+.course-table th {
+    text-align: left;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 12px 15px;
+    color: #ff4d4d;
+    /* theme accent */
+    background: transparent;
+}
+
+.course-table td {
+    border-radius: 12px;
+    padding: 6px 7px;
+    vertical-align: middle;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    background: #2a2a2a;
+    /* light but dark-themed row */
+}
+
+.course-table tr:nth-child(even) td {
+    background: #3b1f1f;
+    /* soft muted red accent for alternate rows */
+}
+
+.course-table tr:hover td {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(255, 77, 77, 0.3);
+    /* subtle red glow */
+}
+
+/* Inputs in table */
+.course-table td input,
+.course-table td select {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #ff4d4d;
+    background: #3a3a3a;
+    /* same as row or slightly darker */
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.course-table td input:focus,
+.course-table td select:focus {
+    border-color: #ff1a1a;
+    box-shadow: 0 0 8px rgba(255, 26, 26, 0.45);
+    outline: none;
+    background: #4d1f1f;
+    /* subtle red focus */
+}
+
+/* Table button */
+.course-table-wrapper .start-btn {
+    margin-top: 30px;
+    width: 100%;
+    padding: 14px;
+    border-radius: 35px;
+    border: 2px solid #ff4d4d;
+    background: transparent;
+    color: #ff4d4d;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.35s ease;
+}
+
+.course-table-wrapper .start-btn:hover {
+    background: #ff4d4d;
+    color: white;
+    box-shadow: 0 0 15px rgba(255, 77, 77, 0.5);
+    transform: translateY(-3px);
+}
+
+/* Result Card */
+.gpa-result-card {
+    max-width: 600px;
+    /* bigger card */
+    margin: 50px auto;
+    background: linear-gradient(145deg, #1a1a1a, #2a0a0a);
+    padding: 40px 30px;
+    /* more padding */
+    border-radius: 30px;
+    /* slightly rounder */
+    text-align: center;
+    color: #fff;
+    border: 2px solid #ff4d4d;
+    box-shadow: 0 15px 40px rgba(255, 77, 77, 0.25);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* subtle glowing border */
+.gpa-result-card::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 77, 77, 0.2), transparent 70%);
+    animation: glowMove 6s infinite alternate;
+    z-index: 0;
+}
+
+@keyframes glowMove {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.gpa-result-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 50px rgba(255, 77, 77, 0.5);
+}
+
+.gpa-result-card h3 {
+    font-size: 28px;
+    color: #ff4d4d;
+    margin-bottom: 15px;
+    position: relative;
+    z-index: 1;
+}
+
+.gpa-result-card p {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #eee;
+    position: relative;
+    z-index: 1;
+}
+
+/* special text for motivation */
+.gpa-result-card .motivation {
+    font-size: 16px;
+    color: #ff9999;
+    margin-top: 15px;
+    font-style: italic;
+}
+
+/* Base adjustments for smaller screens */
+@media (max-width: 1024px) {
+    .section-header h2 {
+        font-size: 38px;
+    }
+
+    .section-header p {
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
+
+    .gpa-card,
+    .course-table-wrapper,
+    .gpa-result-card {
+        max-width: 90%;
+        padding: 30px 20px;
+    }
+
+    .course-table th,
+    .course-table td {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+
+    .course-table td input,
+    .course-table td select {
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+
+    .start-btn {
+        padding: 12px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-header h2 {
+        font-size: 32px;
+    }
+
+    .section-header p {
+        font-size: 15px;
+        margin-bottom: 30px;
+    }
+
+    .gpa-card,
+    .course-table-wrapper,
+    .gpa-result-card {
+        padding: 25px 15px;
+    }
+
+    .course-table-wrapper {
+        overflow-x: auto;
+        /* allow horizontal scroll for small screens */
+    }
+
+    .course-table th,
+    .course-table td {
+        padding: 6px 8px;
+        font-size: 13px;
+    }
+
+    .course-table td input,
+    .course-table td select {
+        padding: 6px 8px;
+        font-size: 13px;
+    }
+
+    .start-btn {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .gpa-result-card h3 {
+        font-size: 24px;
+    }
+
+    .gpa-result-card p {
+        font-size: 16px;
+    }
+
+    .gpa-result-card .motivation {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-header h2 {
+        font-size: 28px;
+    }
+
+    .section-header p {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    .gpa-card,
+    .course-table-wrapper,
+    .gpa-result-card {
+        padding: 20px 15px;
+    }
+
+    .course-table th,
+    .course-table td {
+        padding: 5px 6px;
+        font-size: 12px;
+    }
+
+    .course-table td input,
+    .course-table td select {
+        font-size: 12px;
+        padding: 5px 6px;
+    }
+
+    .start-btn {
+        font-size: 13px;
+        padding: 10px;
+    }
+
+    .gpa-result-card h3 {
+        font-size: 22px;
+    }
+
+    .gpa-result-card p {
+        font-size: 15px;
+    }
+
+    .gpa-result-card .motivation {
+        font-size: 13px;
+    }
+}

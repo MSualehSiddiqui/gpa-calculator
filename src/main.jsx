@@ -8,7 +8,7 @@ import App from './App';
 //Pages
 import {
   Home,
-} from "./Pages";
+} from "./pages";
 
 const router = createBrowserRouter(
   createRoutesFromElements(

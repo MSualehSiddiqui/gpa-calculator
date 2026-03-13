@@ -108,7 +108,7 @@ function About() {
                     <h3>MERN Stack Developer</h3>
 
                     <p>
-                        Results-driven MERN Stack Developer with 1+ year of experience
+                        Results-driven MERN Stack Developer with 2+ year of experience
                         designing and developing scalable web applications using MongoDB,
                         Express.js, React.js, and Node.js. Passionate about building clean
                         UI, responsive interfaces, and Fefficient full-stack systems.

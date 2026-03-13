@@ -52,9 +52,9 @@ function UniversitySection() {
     };
 
     return (
-        <section className="university-section">
+        <section className="university-section" id="calculator">
             <div className="section-header">
-                <h2>Shaheed Zulfikar Ali Bhutto Institute of Science and Technology</h2>
+                <h2>SZABIST</h2>
                 <p>Track your semester GPA easily and efficiently</p>
             </div>
 

@@ -11,7 +11,7 @@
     background:
         radial-gradient(circle at 10% 20%, rgba(255, 0, 0, 0.25), transparent 35%),
         radial-gradient(circle at 90% 80%, rgba(255, 60, 60, 0.18), transparent 40%),
-        linear-gradient(135deg, #111111, #1a1a1a, #2a0000);
+        linear-gradient(135deg, #111111, #1c1c1c, #2a0000);
 }
 
 .hero::before {
@@ -164,7 +164,7 @@
     background:
         radial-gradient(circle at 10% 20%, rgba(255, 0, 0, 0.25), transparent 35%),
         radial-gradient(circle at 90% 80%, rgba(255, 60, 60, 0.18), transparent 40%),
-        linear-gradient(135deg, #111111, #1a1a1a, #2a0000);
+        linear-gradient(135deg, #111111, #1c1c1c, #2a0000);
 }
 
 .hero::before {

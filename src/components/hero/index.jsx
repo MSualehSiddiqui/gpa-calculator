@@ -23,10 +23,11 @@ function Hero() {
                     their academic performance. Track your semester GPA and cumulative
                     GPA in seconds.
                 </p>
-
-                <button className="cta-btn">
-                    Start Calculating
-                </button>
+                <a href="#calculator">
+                    <button className="cta-btn">
+                        Start Calculating
+                    </button>
+                </a>
 
             </div>
 

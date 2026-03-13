@@ -35,6 +35,7 @@ function GradingPlan() {
             <div className="grade-tip">
                 Tip: Use these grade points to calculate your semester GPA accurately.
             </div>
+            <div className="calculator-img"></div>
         </section>
     );
 }

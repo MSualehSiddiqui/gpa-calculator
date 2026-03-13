@@ -4,16 +4,17 @@ import './index.css'
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom';
 import App from './App';
 
-
 //Pages
 import {
   Home,
+  About,
 } from "./pages";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<App />}>
       <Route path="/" element={<Home />} />
+      <Route path="/about" element={<About />} />
     </Route>
   )
 )

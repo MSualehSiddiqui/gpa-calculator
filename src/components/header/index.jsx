@@ -1,20 +1,22 @@
 import { Container } from "react-bootstrap";
 import "./style.css";
 import { FaPhone } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 
 function Header() {
     return (
         <nav className="navbar">
-            <div className="logo">
+            <Link to="/" className="logo">
                 GPA<span>Pro</span>
-            </div>
+            </Link>
 
             <div className="nav-right">
-                <button className="contact-btn">
-                    Contact Us
-                    <FaPhone className="ms-2" size={12} />
-                </button>
+                <Link to="/about">
+                    <button className="contact-btn me-2">
+                        About Me
+                    </button>
+                </Link>
             </div>
         </nav>
     )

@@ -107,12 +107,16 @@
     transform: translateY(-3px);
 }
 
-.calculator-img{
+.calculator-img {
     width: 100%;
     height: 100vh;
-    background-image: url("../../assets/image.png");
-    background-size: cover;
-    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator-img>img {
+    height: 100%;
 }
 
 /* Responsive adjustments */
@@ -128,6 +132,11 @@
 }
 
 @media (max-width: 480px) {
+    .calculator-img>img {
+        width: 100%;
+        height: auto;
+    }
+
     .grading-premium-section {
         padding: 100px 4% 60px 4%;
     }

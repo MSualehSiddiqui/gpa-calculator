@@ -1,4 +1,5 @@
 import "./style.css";
+import CalculatorImg from "../../assets/image.png";
 
 function GradingPlan() {
     const grades = [
@@ -35,7 +36,9 @@ function GradingPlan() {
             <div className="grade-tip">
                 Tip: Use these grade points to calculate your semester GPA accurately.
             </div>
-            <div className="calculator-img"></div>
+            <div className="calculator-img">
+                <img src={CalculatorImg} alt="CalculatorImg" />
+            </div>
         </section>
     );
 }

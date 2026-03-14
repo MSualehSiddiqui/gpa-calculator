@@ -338,7 +338,6 @@
 @media only screen and (max-width: 400px) {
     .hero {
         padding: 0 5%;
-        height: 80vh;
     }
 
     .hero h1 {

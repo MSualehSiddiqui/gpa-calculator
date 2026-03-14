@@ -59,7 +59,7 @@ function UniversitySection() {
             </div>
 
             {!showTable && gpaResult === null && (
-                <div className="gpa-card">
+                <div className="gpa-card" data-aos="zoom-in">
                     <h3>Enter Your Semester Details</h3>
 
                     <div className="input-group">
@@ -89,7 +89,7 @@ function UniversitySection() {
             )}
 
             {showTable && (
-                <div className="course-table-wrapper">
+                <div className="course-table-wrapper" data-aos="zoom-in">
                     <h3>Enter Credit Hours & Grades</h3>
                     <table className="course-table">
                         <thead>
@@ -137,7 +137,7 @@ function UniversitySection() {
             )}
 
             {gpaResult !== null && (
-                <div className="gpa-result-card">
+                <div className="gpa-result-card" data-aos="zoom-in">
                     <h3>🎉 Your Semester GPA</h3>
                     <p>{gpaResult}</p>
                     <p>Based on the grades and credit hours entered.</p>

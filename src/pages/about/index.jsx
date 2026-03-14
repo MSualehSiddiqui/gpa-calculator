@@ -1,4 +1,4 @@
-import { Header, Footer } from "../../components";
+import { Header, Footer, ContactForm } from "../../components";
 import "./style.css";
 import {
     FaGithub,
@@ -184,6 +184,8 @@ function About() {
                     </div>
                 </section>
 
+
+                <ContactForm />
             </main>
             <Footer />
         </>

@@ -6,7 +6,7 @@ function Hero() {
 
             <div className="hero-glow"></div>
 
-            <div className="hero-content">
+            <div className="hero-content" data-aos="zoom-in">
 
                 <p className="tagline">
                     Smart Tools for Smart Students
